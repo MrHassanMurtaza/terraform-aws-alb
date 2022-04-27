@@ -108,3 +108,9 @@ variable "description" {
   type        = string
   description = "The description of the all resources."
 }
+
+variable "drop_invalid_header_fields" {
+  default     = false
+  type        = bool
+  description = "Indicates whether invalid header fields are dropped in application load balancers. Defaults to false."
+}
